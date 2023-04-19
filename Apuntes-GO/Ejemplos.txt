@@ -1,0 +1,92 @@
+
+
+//     Servicios web: Go es utilizado para desarrollar servidores web escalables y rápidos, gracias a su capacidad para manejar concurrencia y alto rendimiento.
+
+//     Aplicaciones de red: Go es utilizado para desarrollar aplicaciones de red, como proxies, servidores DNS y clientes de red.
+
+//     Herramientas de línea de comandos: Go es utilizado para desarrollar herramientas de línea de comandos, como compresores de archivos, programas de respaldo y programas de monitoreo.
+
+//     Aplicaciones de sistema: Go es utilizado para desarrollar aplicaciones de sistema, como sistemas de archivos, gestores de procesos y programas de monitoreo de sistemas.
+
+//     Juegos: Algunos juegos han sido desarrollados utilizando Go, gracias a su capacidad para manejar gráficos y concurrencia.
+
+// Estos son solo algunos ejemplos de las aplicaciones que pueden ser desarrolladas con Go, pero en realidad las posibilidades son infinitas.
+
+// Aquí están algunos ejemplos concretos de las aplicaciones mencionadas anteriormente:
+
+//     Servicios web:
+//         Dropbox API
+//         Docker API
+//         Kubernetes API
+
+//     Aplicaciones de red:
+//         Terraform
+//         Caddy
+//         Syncthing
+
+//     Herramientas de línea de comandos:
+//         Hugo
+//         dep
+//         rclone
+
+//     Aplicaciones de sistema:
+//         Etcd
+//         InfluxDB
+//         CockroachDB
+
+//     Juegos:
+//         OpenRA
+//         Ponzi
+//         DASH
+
+// Estos son solo algunos ejemplos y hay muchos más aplicaciones desarrolladas con Go. Además, debes tener en cuenta que estos son solo proyectos conocidos y hay muchos más proyectos pequeños y menos conocidos desarrollados con Go
+
+    Suma de dos números:
+
+go
+
+package main
+
+import "fmt"
+
+func main() {
+    var num1 int
+    var num2 int
+    fmt.Print("Ingrese el primer número: ")
+    fmt.Scan(&num1)
+    fmt.Print("Ingrese el segundo número: ")
+    fmt.Scan(&num2)
+    sum := num1 + num2
+    fmt.Println("La suma de los números es:", sum)
+}
+
+//////////////////////////////////////
+    Hola mundo:
+package main
+
+import "fmt"
+
+func main() {
+    fmt.Println("Hola, mundo")
+}
+
+///////////////////////////////////////
+
+
+    Servidor web básico:
+
+    package main
+
+import (
+    "fmt"
+    "net/http"
+)
+
+func main() {
+    http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
+        fmt.Fprintf(w, "Bienvenido al servidor web en Go!")
+    })
+    http.ListenAndServe(":8080", nil)
+}
+
+
